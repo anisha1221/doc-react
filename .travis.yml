@@ -5,4 +5,4 @@ services:
 before_install:
   - docker build -t manisha1221/doc-react -f Dockerfile.dev .
 script:
-  - docker run -e CI=true manisha1221/doc-react  npm run test
+  - docker run -e CI=true manisha1221/doc-react  npm run test -- --
